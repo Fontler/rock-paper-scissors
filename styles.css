@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Roboto:ital,wght@1,300&display=swap");
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  height: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+}
+
+ol, ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  background-color: #327587;
+  color: white;
+  font-family: "outfit", sans-serif;
+  height: 100vh;
+}
+
+header {
+  padding: 3rem 0;
+  display: flex;
+  justify-content: center;
+  background-color: #1f4d61;
+}
+header h1 {
+  font-family: "Hanalei Fill", cursive;
+  font-size: 4rem;
+  text-align: center;
+}
+@media (max-width: 700px) {
+  header h1 {
+    font-size: 3rem;
+  }
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+main button {
+  border-radius: 0.5rem;
+  background-color: #1f4d61;
+  color: white;
+  border: none;
+  transition: 0.3s ease;
+}
+main button:hover {
+  background-color: #f03a17;
+}
+main .score-container {
+  padding: 1.5rem 0;
+}
+@media (min-height: 700px) {
+  main .score-container {
+    padding: 3rem 0;
+  }
+}
+main .score-container .round-counter {
+  font-size: 1.1rem;
+}
+main .score-container .score-title {
+  font-size: 2.2rem;
+  padding: 0.5rem 0;
+}
+main .score-container .score-text {
+  font-size: 1.3rem;
+  padding: 0.5rem 0;
+}
+main .score-container .scoreboard {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 3rem;
+}
+@media (min-height: 800px) {
+  main .score-container .scoreboard {
+    padding-top: 2rem;
+  }
+}
+main .score-container .scoreboard .score-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+main .score-container .scoreboard .score-card .player-icon, main .score-container .scoreboard .score-card .computer-icon {
+  font-size: 5rem;
+  width: 102px;
+}
+main .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+@media (min-height: 800px) {
+  main .buttons {
+    padding-bottom: 5rem;
+  }
+}
+main .buttons button {
+  width: 10rem;
+  height: 10rem;
+}
+@media (max-width: 560px) {
+  main .buttons button {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+main .buttons .icon {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+@media (max-width: 560px) {
+  main .buttons .icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+}
+main .end-container {
+  padding: 4rem 0;
+}
+main .end-container .end-title {
+  padding-bottom: 2.5rem;
+  font-size: 3rem;
+}
+@media (max-width: 560px) {
+  main .end-container .end-title {
+    font-size: 2rem;
+  }
+}
+main .end-container .endbtn {
+  align-self: center;
+  padding: 1.5rem 2.5rem;
+  font-size: 1.5rem;
+}
+@media (max-width: 560px) {
+  main .end-container .endbtn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+@media (min-height: 660px) {
+  footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+footer .footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+footer .footer-text {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease;
+}
+footer .footer-text:hover {
+  background-color: #f03a17;
+  /* border-radius: 0.5rem; */
+}/*# sourceMappingURL=styles.css.map */
