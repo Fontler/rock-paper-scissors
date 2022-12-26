@@ -79,13 +79,13 @@ function checkStandings() {
     roundCounter.innerHTML = 'Round: ' + round;
     playerScore.innerHTML = 'Player: ' + wins;
     computerScore.innerHTML = 'Computer: ' + loses;
-    if (round === 4 && wins > loses) {
+    if (round === 5 && wins > loses) {
         gameEnd('win');
     }
-    else if (round === 4 && wins < loses) {
+    else if (round === 5 && wins < loses) {
         gameEnd();
     }
-    else if (round === 4 && wins === loses) {
+    else if (round === 5 && wins === loses) {
         gameEnd('draw');
     }
 }
